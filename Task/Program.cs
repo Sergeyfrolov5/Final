@@ -10,6 +10,15 @@ if (number > 0)
         sourceArray[i] = Console.ReadLine();
     }
 
+    Console.WriteLine();
+    Console.WriteLine("Результат:");
+    Console.Write("[");
+    for (int i = 0; i < sourceArray.Length; i++)
+    {
+        if (i < sourceArray.Length - 1) Console.Write(sourceArray[i] + "," + " ");
+        else Console.Write(sourceArray[i] + "] ");
+    }
+
     void ArrayThreeSymbols(string[] array)
     {
         Console.Write("-> [");
@@ -21,15 +30,6 @@ if (number > 0)
             }
         }
         Console.WriteLine("]");
-    }
-
-    Console.WriteLine();
-    Console.WriteLine("Результат:");
-    Console.Write("[");
-    for (int i = 0; i < sourceArray.Length; i++)
-    {
-        if (i < sourceArray.Length - 1) Console.Write(sourceArray[i] + "," + " ");
-        else Console.Write(sourceArray[i] + "] ");
     }
 
     ArrayThreeSymbols(sourceArray);
